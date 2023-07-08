@@ -1,34 +1,25 @@
 package org.example;
 
-import java.sql.*;
+import org.example.model.Employee;
+import org.example.service.EmployeeDAO;
+import org.example.service.EmployeeDAOImpl;
 
 public class Application {
     public static void main(String[] args) {
 
-        final String user = "postgres";
-        final String password = "AliveLegents";
-        final String url = "jdbc:postgresql://localhost:5432/skypro";
+        Employee employee = new Employee(14, "alex", "clark", "m", 30, 3);
 
-        try (final Connection connection = DriverManager.getConnection(url, user, password)){
-            PreparedStatement statement = connection.prepareStatement("" + "SELECT * FROM employee WHERE id = (?)"); {
-                statement.setInt(1,6);
-                final ResultSet resultSet = statement.executeQuery();
+        EmployeeDAO employeeDAO = new EmployeeDAOImpl();
+        employeeDAO.getAllEmployee().forEach(System.out::println);
 
-                if (resultSet.next()){
-                    String name = "Name " + resultSet.getString("first_name");
-                    String surname = "Surmname " + resultSet.getString("last_name");
-                    String gender = "Gender " + resultSet.getString("gender");
-                    int age = resultSet.getInt(5);
+        Integer employeeId = employeeDAO.addEmployee(employee);
 
-                    System.out.println(name);
-                    System.out.println(surname);
-                    System.out.println(gender);
-                    System.out.println("Age " + age);
-                }
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        System.out.println(employeeDAO.getAllEmployee());
 
+        employeeDAO.updateEmployee(employeeId, employee);
+
+        employeeDAO.deleteEmployee(employeeDAO.getByID(employeeId));
+
+        System.out.println(employeeDAO.getByID(4));
     }
 }
