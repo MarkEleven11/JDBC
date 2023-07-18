@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="206d3e3f-80d6-4ae8-b04d-f3957d9ee2b6" name="Changes" comment="" />
+    <list default="true" id="206d3e3f-80d6-4ae8-b04d-f3957d9ee2b6" name="Changes" comment="Hibernate task">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CityDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Employee.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PrnCcEoyHM4WK5HlPLB5SqxXM5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,13 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JAVA/TelegramBot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,8 +70,57 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684223944369</updated>
+      <workItem from="1684223945796" duration="114000" />
+      <workItem from="1685012900090" duration="5959000" />
+      <workItem from="1685078211421" duration="600000" />
+      <workItem from="1685124501967" duration="4466000" />
+      <workItem from="1688104424269" duration="165000" />
+      <workItem from="1688552751268" duration="648000" />
+      <workItem from="1688798861058" duration="7684000" />
+      <workItem from="1689580362900" duration="18000" />
+      <workItem from="1689678643546" duration="21000" />
+      <workItem from="1689680742611" duration="4963000" />
     </task>
+    <task id="LOCAL-00001" summary="Begin">
+      <created>1684224006020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684224006021</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Commit 1">
+      <created>1685017156943</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685017156944</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Commit 2">
+      <created>1685019052236</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685019052236</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Commit 3">
+      <created>1685128905007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685128905007</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Hibernate task">
+      <created>1688807673889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1688807673889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -44,5 +132,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Begin" />
+    <MESSAGE value="Commit 1" />
+    <MESSAGE value="Commit 2" />
+    <MESSAGE value="Commit 3" />
+    <MESSAGE value="Hibernate task" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate task" />
   </component>
 </project>
